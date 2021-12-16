@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> Tareas</title>
+<meta name="viewport" content="user-scalable=no, width=devuce,with" charset="utf-8" />
+<link rel = "stylesheet" type = "text/css" href = "librerias/css/bootstrap.css"/>
+<link rel = "stylesheet" type = "text/css" href = "librerias/css/estilos.css"/>
+<script type="text/javascript" src= "librerias/js/jquery.js"></script>
+<script type="text/javascript" src= "librerias/js/crud.js"></script>
+
+</head>
+
+<body>
+<div class="navbar">
+<h1 > Bienvenido a tu lista de tareas </h1>
+	<td class="navbar">
+        <div class="list" id="storeList" style="width:380%">
+
+        </div>
+    </td>
+</div>	
+<div class = "container"> 
+	<div class = "row"> 
+		<form autocomplete="off" onsubmit="onFormSubmit()"> 
+			<fieldset>
+			<legend>Tarea</legend>
+		<div>
+            <label for="productCode"></label>
+            <input type="text" name="productCode" class = "form-control" id="item">
+        </div>
+<br />
+		<div class="form_action--button">
+            <input class="btn btn-primary" type="submit" value="Enviar">
+		</div>
+		</form>
+<br />
+	<div class="alert alert-Light" role="alert">
+             <p> Define las tareas según la importancia con los siguientes items seguidos de la descripción </p>
+			 <button type="button" id="primary" onclick="TypeItem('primary')" class="btn btn-primary"> <span class="badge badge-light"></span><span class="sr-only">primary</span></a>
+			 <button type="button" id="secondary" onclick="TypeItem('secondary')" class="btn btn-secondary"> <span class="badge badge-light"></span><span class="sr-only">Secondary</span></button>
+			 <button type="button" id="success" onclick="TypeItem('success')" class="btn btn-success"> <span class="badge badge-light"></span><span class="sr-only">Success</span></button>
+			 <button type="button" id="danger" onclick="TypeItem('danger')" class="btn btn-danger"> <span class="badge badge-light"></span><span class="sr-only">Danger</span></button>
+			 <button type="button" id="warning" onclick="TypeItem('warning')" class="btn btn-warning"> <span class="badge badge-light"></span><span class="sr-only">Warning</span></button>
+			 <button type="button" id="info" onclick="TypeItem('info')" class="btn btn-info"> <span class="badge badge-light"></span><span class="sr-only">Info</span></button>
+			 <button type="button" id="light" onclick="TypeItem('light')" class="btn btn-light"> <span class="badge badge-light"></span><span class="sr-only">Light</span></button>
+			 <button type="button" id="dark" onclick="TypeItem('dark')" class="btn btn-dark"> <span class="badge badge-light"></span><span class="sr-only">Dark</span></button>
+	</div>
+<br />
+<br />
+<br />
+<br />
+			 </fieldset>
+		
+	</div>
+</div>
+</body>
+</html>
